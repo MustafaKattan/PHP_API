@@ -1,0 +1,78 @@
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+#company_summary_tpl{
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.table_row td{
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+}
+</style>
+<section id="company_summary_tpl">
+    <table style="width: 100%; margin: 15px;">
+        <tr class="table_row">
+            <td style="width:50%;border: 1px solid #b6b3b3; margin-right: 10px;" >
+                <table class="x_company_table" style="width: 100%; padding: 5px;" >
+                    <tr >
+                        <td style="color: #312d8b;font-size: 26px;font-weight: bold;font-family: 'Open Sans', sans-serif;" colspan="2">Company summary</td>
+                    </tr>
+                    <tr>
+                        <td style=" border-bottom: 1px solid #756f6f; padding-top: 30px;"><img style="width: 15px; color: blue; " src="../include/resources/img/status.png"> Company status:</td>
+                        <td style=" padding: 0px;  text-align:right; border-bottom: 1px solid #756f6f;">
+                            <strong class="x_status" style="font-size: 18px; margin: 0; padding:10px; background-color:%%%status-color%%%; color: #fff; font-weight: bold;">%%CompanyStatus%%</strong>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td style="border-bottom: 1px solid #756f6f; padding-top:20px;"><img style="width: 15px; color: blue;" src="../include/resources/img/vatnum.png"> Website:</td>
+                        <td style=" text-align:right; border-bottom: 1px solid #756f6f; padding-top: 20px; font-weight:lighter;"> %%WebURL%%  </td>
+                    </tr>
+                    <tr >
+                        <td style="border-bottom: 1px solid #756f6f; padding-top: 20px;"><img style="width: 15px; color: blue; " src="../include/resources/img/marker-icon.png">
+                            Address:</td>
+                        <td style=" text-align:right; border-bottom: 1px solid #756f6f; padding-top: 20px;"> %%PrimaryCity%%.  %%CountryCode%%</td>
+                    </tr>
+                    <tr >
+                        <td style="border-bottom: 1px solid #756f6f; padding-top: 20px;"><img style="width: 15px; color: blue; " src="../include/resources/img/phone.png"> Telephone:</td>
+                        <td style=" text-align:right; border-bottom: 1px solid #756f6f; padding-top: 20px;">   %%Telephone%%  </td>
+                    </tr>
+                    <tr >
+                        <td style="border-bottom: 1px solid #756f6f; padding-top: 20px;"><img style="width: 15px; color: blue; " src="../include/resources/img/indu.png"> Industry:</td>
+                        <td style=" text-align:right; border-bottom: 1px solid #756f6f; padding-top: 20px;"> %%MainActivityDescription%% </td>
+                    </tr>
+                    <tr >
+                        <td style="border-bottom: 1px solid #756f6f; padding-top: 20px;"><img style="width: 15px; color: blue; " src="../include/resources/img/indu.png"> Legal form:</td>
+                        <td style=" text-align:right; border-bottom: 1px solid #756f6f; padding-top: 20px;"> %%CS_LegalFormSay%%</td>
+                    </tr>
+                    <tr >
+                        <td style="padding-bottom: 9px; padding-top: 20px;"><img style="width: 15px; color: blue; " src="../include/resources/img/vatnum.png"> VAT number:</td>
+                        <td style=" text-align:right;  padding-top: 20px; padding-bottom: 0px;">%%VatNumber%%  </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="border: 1px solid #b6b3b3; vertical-align: top;">
+                <table style="padding:15px 0 0 0; margin:0;">
+                    <tr style="padding: 0; margin:0;">
+                        <td style="color: #312d8b; font-size: 26px; font-weight: bold; font-family: 'Open Sans', sans-serif; width:200px;">Credit score</td>
+                        <td style="font-size: 26px; padding:5px 10px; font-weight: bold; margin:0; background:%%%riskStatus%%%; color: #fff; ">%%InternationalDescription%%</td>
+                    </tr>
+                </table>
+               <table style="text-align: center; width: 100%; margin-bottom:-25px; padding: 0;">
+                   <tr>
+                       <td >
+                           <p style=" width: 100%; padding: 0; margin: 0; font-weight: bold; text-align: center; color: orangered; font-size: 76px;vertical-align: sub;">%%ProviderScore%% <span style="margin: 0; color:black;padding: 0; font-size: 16px; text-align: left;vertical-align: super;">/100</span></p>
+                       </td>
+                   </tr>
+               </table>
+                <div  class="block_graph " style="margin: 0; padding: 0;">
+                    <img src="%%IMG_chart%%"/>
+                    <img style="height: 45px; width: 370px;" src="../include/resources/img/risk.png">
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>

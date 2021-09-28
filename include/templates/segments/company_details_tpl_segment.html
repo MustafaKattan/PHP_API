@@ -1,0 +1,42 @@
+<style>
+    #company_tpl{
+        background: #253b82;
+        padding: 15px;
+    }
+    td{
+        padding:5px 10px;
+    }
+</style>
+
+<section id="company_tpl">
+    <table style="width: 100%;">
+        <tr>
+            <td class="header_company_name">
+                 <img style="background-repeat: no-repeat; width: 50px; background-size: contain;" src="../include/resources/img/building_up.png">
+            </td>
+            <td>
+                <p style="color: #fff; font-size: 18px;">%%CompanyName%%</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20px;" ><img style="width: 50px;" src="../include/resources/img/agenda.png"></td>
+            <td style="width: 315px;">
+                <p style="color: #fff; font-size: 18px;">
+                    Date of report: dateOfReport
+                </p>
+            </td>
+            <td style="text-align: left">
+                <table style="background:rgba(0,0,0,0.2);  ">
+                    <tr>
+                        <td>
+                            <img class="warning_icon" style="margin:0;  width: 30px; padding: 0; " src="../include/resources/img/warning.jpg" >
+                        </td>
+                        <td >
+                           <p style="color: #d70000;"> Outdated data</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</section>
