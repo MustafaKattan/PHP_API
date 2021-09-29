@@ -3,7 +3,7 @@
 class GoldmineHandler{
 
     public static function getCreditReportData($companyId){
-        $url = "https://api-goldmine.bierensgroup.net/serviceCreditSafe/requestCreditReport.php?CompanyId=%%COMPANY_ID%%&ReportType=json";
+        $url = "https://api-example.com";
         $url = str_replace("%%COMPANY_ID%%", $companyId, $url);
 
         $headers = [
@@ -12,7 +12,7 @@ class GoldmineHandler{
         ];
         $ch = curl_init();
         if(substr($_SERVER['HTTP_HOST'],0, 9) == "localhost"){
-            curl_setopt($ch, CURLOPT_CAINFO, 'C:\xampp\php\extras\ssl\bierensgroup.pem');
+            curl_setopt($ch, CURLOPT_CAINFO, 'extras\ssl\example.pem');
         }
 
         curl_setopt($ch, CURLOPT_URL, $url);
